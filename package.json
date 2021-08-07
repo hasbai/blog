@@ -1,0 +1,19 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "A project of vuepress-theme-hope",
+  "license": "MIT",
+  "scripts": {
+    "docs:build": "vuepress build blog",
+    "docs:clean-dev": "vuepress dev blog --no-cache",
+    "docs:dev": "vuepress dev blog",
+    "docs:eject-theme": "vuepress eject-hope blog"
+  },
+  "devDependencies": {
+    "vuepress": "^1.8.2",
+    "vuepress-theme-hope": "^1.19.0"
+  },
+  "resolutions": {
+    "vue-router": "3.4.5"
+  }
+}
