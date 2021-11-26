@@ -53,8 +53,9 @@ module.exports = config({
     },
 
     comment: {
-      type: "waline",
-      serverURL: "https://blog-backend-omega.vercel.app/",
+      type: "valine",
+      appId: "nSmLH6lVK3nRqQaHyNM4vP6o-MdYXbMMI",
+      appKey: "k5X10dGi40nvQf7oDts9CIJH",
     },
 
     copyright: {
