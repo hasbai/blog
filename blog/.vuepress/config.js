@@ -53,9 +53,12 @@ module.exports = config({
     },
 
     comment: {
-      type: "valine",
-      appId: "nSmLH6lVK3nRqQaHyNM4vP6o-MdYXbMMI",
-      appKey: "k5X10dGi40nvQf7oDts9CIJH",
+      type: "vssue",
+      platform: "github",
+      owner: "hasbai",
+      repo: "blog",
+      clientId: "f2cdd6dca2c1e53fedfe",
+      clientSecret: "c4a5643f33e58be7f331420aa6a68bdb4c12d7bf",
     },
 
     copyright: {
@@ -141,5 +144,5 @@ module.exports = config({
         ],
       },
     },
-  },
+  }
 });
