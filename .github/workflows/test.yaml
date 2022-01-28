@@ -1,0 +1,20 @@
+name: 测试
+on:
+  push:
+    branches:
+      - workflow
+jobs:
+  wechat:
+    runs-on: ubuntu-latest
+    steps:
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+
+      - run: |
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            $extension=$(echo ${changed_file} | cut -d . -f2)
+            if  [ ${$extension} == md ]
+            then
+              echo "Do something with this ${changed_file}."
+            fi
+          done
