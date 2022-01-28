@@ -14,10 +14,14 @@ jobs:
         uses: jitterbit/get-changed-files@v1
 
       - run: |
-          for changed_file in ${{ steps.files.outputs.all }}; do
-            $extension=$(echo ${changed_file} | cut -d . -f2)
-            if  [ ${$extension} == md ]
-            then
-              echo "Do something with this ${changed_file}."
-            fi
-          done
+          apt update
+          apt install curl
+          for changed_file in ${{ steps.files.outputs.added }}
+            do
+              extension=${changed_file##*.}
+              echo $extension
+              if  [ $extension = 'md' ]
+                then
+                  curl ${{ secrets.WECHAT_SERVER_URL }} -X POST -F "file=@${changed_file}" -H "Authorization: ${{ secrets.WECHAT_SERVER_TOKEN }}"
+              fi
+            done
