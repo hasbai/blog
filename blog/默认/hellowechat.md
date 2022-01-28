@@ -1,6 +1,7 @@
 ---
 title: Hello WeChat
 date: 2022-01-28
+wechat: true
 categories:
  - 默认
 tags:
