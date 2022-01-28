@@ -14,8 +14,6 @@ jobs:
         uses: jitterbit/get-changed-files@v1
 
       - run: |
-          apt update
-          apt install curl
           for changed_file in ${{ steps.files.outputs.added }}
             do
               extension=${changed_file##*.}
