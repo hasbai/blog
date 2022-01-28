@@ -7,6 +7,9 @@ jobs:
   wechat:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout branch
+        uses: actions/checkout@master
+
       - id: files
         uses: jitterbit/get-changed-files@v1
 
