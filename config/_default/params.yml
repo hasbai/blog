@@ -37,7 +37,7 @@ banner: "images/banner.webp"
 
 # If you want to use the srcset attribute, please enable it
 banner_srcset:
-  enable: false
+  enable: true
   srcset:
     - src: "images/banner-600w.webp"
       media: "(max-width: 479px)"
@@ -89,26 +89,27 @@ copyright:
 # Need help choosing? Please see...
 # https://creativecommons.org/choose/
 # https://choosealicense.com/
-# copyright: |-
-#   <div style="flex-direction:column;align-items: center;"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-#   All website licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></div>
+copyright: |-
+  All content licensed under &nbsp;<span style="font-size:large;">🅭</span>&nbsp;
+  <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a>
+
 
 footer:
-  since: 2020 # 2020-current year
-  powered: true
-  count: true
+  since: 2024 # 2020-current year
+  powered: false
+  count: false
   busuanzi: true
   icon:
     url: "../images/taichi.png" # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
-    rotate: true
+    rotate: false
     mask: true # whether to use the images as a mask
 
 # Sidebar
 sidebar: right
 
 social:
-  # email: mailto:xxx@gmail.com
-  # github: https://github.com/yourname
+  email: mailto:jsclndnz@gmail.com
+  github: https://github.com/hasbai
   # google: https://plus.google.com/yourname
   # twitter: https://twitter.com/yourname
   # facebook: https://www.facebook.com/yourname
@@ -131,7 +132,7 @@ social:
   # keybase: https://keybase.io/yourname
   # telegram: https://t.me/yourname
   # discord: https://discordapp.com/users/yourname
-  # steam: https://steamcommunity.com/id/yourname
+  steam: https://steamcommunity.com/profiles/76561199063075004/
 
 widgets:
   - category
@@ -336,8 +337,8 @@ waline:
 
 # https://twikoo.js.org
 twikoo:
-  enable: false
-  envId: # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  enable: true
+  envId: https://blog-comment.hath.top
   region:
 
 # https://github.com/gitalk/gitalk/blob/master/readme-cn.md
@@ -370,10 +371,10 @@ giscus:
 ########################################
 
 algolia_search:
-  enable: false
-  appID:
-  apiKey:
-  indexName:
+  enable: true
+  appID: UM9MASMG21
+  apiKey: e2efc3827302d50cf44e3c233a4dc465
+  indexName: blog
   hits:
     per_page: 10
 
@@ -485,7 +486,7 @@ top:
   position: right # left or right
   icon:
     url: "../images/taichi.png" # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
-    rotate: true
+    rotate: false
     mask: true # whether to use the images as a mask
 
 # whether to display the notification when the article is outdated
@@ -501,7 +502,8 @@ outdate:
 
 # ICP 备案
 icp:
-  icpnumber: # ICP备案号
+  moe: 20241064
+  icpnumber: 
   beian: # 网安备案号
   recordcode: # 网安备案链接中的recordcode参数
 
@@ -527,12 +529,12 @@ sponsor:
 # Share
 share:
   # - facebook
-  # - twitter
+  - twitter
   # - linkedin
   # - reddit
   # - weibo
-  # - qq
-  # - weixin
+  - qq
+  - weixin
 
 # show categories card on home page
 home_categories:
