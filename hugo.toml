@@ -1,6 +1,6 @@
 baseURL = 'https://blog.hath.top/'
 title = '拾遗录'
-theme = 'reimu'
+theme = ["github.com/D-Sketon/hugo-theme-reimu"]
 languageCode = 'zh-CN'
 defaultContentLanguage = 'zh-CN'
 
