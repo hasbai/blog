@@ -383,7 +383,7 @@ algolia_search:
 ########################################
 
 preloader:
-  enable: true
+  enable: false
   text:
     zh-CN: 少女祈祷中...
     zh-TW: 少女祈禱中...
